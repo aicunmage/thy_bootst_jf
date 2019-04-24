@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<body>
+	<!-- Basic Card Example -->
+	<div class="row">
+		<div class="col-md-12">
+			<form id="editLayerFrom" th:action="@{${api}}"
+				th:object="${layerParm}" method="post">
+				<div class="form-group">
+					<label for="exampleInputName">层级名</label> <input type="text"
+						th:field="*{name}" class="form-control" id="layerName"
+						placeholder="name">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputSort">排序</label> <input type="number"
+						th:field="*{sort}" class="form-control" id="layerSort"
+						placeholder="sort">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

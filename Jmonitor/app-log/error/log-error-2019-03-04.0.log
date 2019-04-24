@@ -1,0 +1,14 @@
+2019-03-04 16:39:55.302 ERROR 14428 --- [http-nio-8181-exec-1] c.j.m.sys.controller.LayerController     : 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'key,status  FROM sys_network_connection_key 
+ 
+ WHERE status = 1' at line 1
+### The error may exist in com/jmonitor/modules/sys/mapper/NetworkConnectionKeyMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,key,status  FROM sys_network_connection_key     WHERE status = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'key,status  FROM sys_network_connection_key 
+ 
+ WHERE status = 1' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'key,status  FROM sys_network_connection_key 
+ 
+ WHERE status = 1' at line 1

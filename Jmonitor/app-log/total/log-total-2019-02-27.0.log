@@ -1,0 +1,1025 @@
+2019-02-27 09:23:38.434  WARN 4204 --- [http-nio-8181-exec-28] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2019-02-27 10:08:22.402  INFO 4204 --- [Thread-43] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:08:22.415  INFO 4204 --- [Thread-43] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
+2019-02-27 10:08:22.957  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 4204 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:08:22.957  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:08:23.476  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:23.487  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e42ec77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:23.493  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:23.493  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:23.604  INFO 4204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:08:23.605  INFO 4204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:08:23.606  INFO 4204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:08:23.627  INFO 4204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:08:23.627  INFO 4204 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 667 ms
+2019-02-27 10:08:23.688  INFO 4204 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:08:26.505  INFO 4204 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} inited
+2019-02-27 10:08:26.542  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:08:26.612  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:08:26.657  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:08:26.708  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:08:26.987  INFO 4204 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:08:27.045  WARN 4204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-02-27 10:08:27.068  INFO 4204 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:08:27.144  WARN 4204 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:08:27.720  INFO 4204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:08:27.721  INFO 4204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:08:27.727  INFO 4204 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:08:27.767  INFO 4204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:08:27.767  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 4.863 seconds (JVM running for 65941.487)
+2019-02-27 10:08:27.770  INFO 4204 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:08:37.749  INFO 4204 --- [Thread-51] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:08:37.777  INFO 4204 --- [Thread-51] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
+2019-02-27 10:08:38.484  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 4204 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:08:38.485  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:08:38.545  WARN 4204 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jmonitor.JmonitorApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/jmonitor/common/vo/SuperController.class] cannot be opened because it does not exist
+2019-02-27 10:08:38.562 ERROR 4204 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jmonitor.JmonitorApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/jmonitor/common/vo/SuperController.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.jmonitor.JmonitorApplication.main(JmonitorApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [com/jmonitor/common/vo/SuperController.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:88)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:685)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getSuperClass(ConfigurationClassParser.java:998)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:332)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:191)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 18 common frames omitted
+
+2019-02-27 10:08:47.567  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 4204 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:08:47.568  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:08:48.137  INFO 19672 --- [main] com.jmonitor.JmonitorApplicationTests    : Starting JmonitorApplicationTests on DESKTOP-DBO4L4B with PID 19672 (started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:08:48.140  INFO 19672 --- [main] com.jmonitor.JmonitorApplicationTests    : The following profiles are active: test
+2019-02-27 10:08:48.718  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:48.744  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e42ec77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:48.755  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:48.756  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:49.063  INFO 4204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:08:49.066  INFO 4204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:08:49.069  INFO 4204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:08:49.127  INFO 4204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:08:49.127  INFO 4204 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1556 ms
+2019-02-27 10:08:49.309  INFO 4204 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:08:50.340  INFO 4204 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} inited
+2019-02-27 10:08:50.417  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:08:50.601  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:08:50.685  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:08:50.798  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:08:51.330  INFO 19672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:51.448  INFO 19672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db8a6553] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:51.545  INFO 19672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:51.564  INFO 19672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:08:51.638  INFO 4204 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:08:51.705  WARN 4204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-02-27 10:08:51.745  INFO 4204 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:08:51.886  WARN 4204 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:08:52.204  INFO 19672 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:08:53.313  INFO 4204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:08:53.317  INFO 4204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:08:53.334  INFO 4204 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:08:53.431  INFO 4204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:08:53.432  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 5.935 seconds (JVM running for 65967.152)
+2019-02-27 10:08:53.438  INFO 4204 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:08:55.964  INFO 19672 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-27 10:08:56.232  WARN 19672 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:08:56.865  WARN 19672 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:08:57.090  WARN 19672 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:08:57.334  WARN 19672 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:09:00.456  INFO 19672 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:09:01.034  WARN 19672 --- [main] net.sf.ehcache.DiskStorePathManager      : diskStorePath 'C:\Users\Administrator\AppData\Local\Temp\ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to C:\Users\Administrator\AppData\Local\Temp\ehcache\ehcache_auto_created4677662966978622821diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2019-02-27 10:09:02.117  INFO 19672 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:09:03.245  WARN 19672 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:09:03.576  INFO 19672 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:09:03.658  INFO 19672 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:09:03.759  INFO 19672 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:09:04.542  INFO 19672 --- [main] com.jmonitor.JmonitorApplicationTests    : Started JmonitorApplicationTests in 17.405 seconds (JVM running for 18.842)
+2019-02-27 10:09:04.988  INFO 19672 --- [Thread-5] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:09:05.029  INFO 19672 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-02-27 10:09:16.712  INFO 4204 --- [Thread-59] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:09:16.731  INFO 4204 --- [Thread-59] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closed
+2019-02-27 10:09:17.199  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 4204 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:09:17.200  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:09:17.761  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:09:17.774  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e42ec77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:09:17.779  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:09:17.780  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:09:17.887  INFO 4204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:09:17.888  INFO 4204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:09:17.888  INFO 4204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:09:17.912  INFO 4204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:09:17.913  INFO 4204 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 711 ms
+2019-02-27 10:09:17.997  INFO 4204 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:09:20.094  INFO 4204 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} inited
+2019-02-27 10:09:20.138  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:09:20.245  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:09:20.327  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:09:20.398  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:09:20.889  INFO 4204 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:09:20.967  WARN 4204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-02-27 10:09:20.996  INFO 4204 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:09:21.079  WARN 4204 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:09:21.653  INFO 4204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:09:21.654  INFO 4204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:09:21.661  INFO 4204 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:09:21.712  INFO 4204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:09:21.713  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 4.558 seconds (JVM running for 65995.433)
+2019-02-27 10:09:21.716  INFO 4204 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:10:10.584  INFO 19380 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 19380 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:10:10.589  INFO 19380 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:10:10.690  INFO 19380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-27 10:10:10.690  INFO 19380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-27 10:10:12.083  INFO 19380 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:10:12.144  INFO 19380 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98425a65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:10:12.195  INFO 19380 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:10:12.203  INFO 19380 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:10:12.608  INFO 19380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:10:12.629  INFO 19380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:10:12.629  INFO 19380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:10:12.637  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Development\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/Program Development/Java/jre1.8.0_191/bin/server;D:/Program Development/Java/jre1.8.0_191/bin;D:/Program Development/Java/jre1.8.0_191/lib/amd64;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Development\maven\apache-maven-3.6.0\bin;D:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\Program Development\sts\sts-4.0.2.RELEASE;;.]
+2019-02-27 10:10:12.764  INFO 19380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:10:12.764  INFO 19380 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2073 ms
+2019-02-27 10:10:12.970  INFO 19380 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:10:14.787  INFO 19380 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-27 10:10:14.903  WARN 19380 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:10:15.066  WARN 19380 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:10:15.153  WARN 19380 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:10:15.234  WARN 19380 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:10:16.162  INFO 19380 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:10:16.241  WARN 19380 --- [restartedMain] net.sf.ehcache.DiskStorePathManager      : diskStorePath 'C:\Users\Administrator\AppData\Local\Temp\ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to C:\Users\Administrator\AppData\Local\Temp\ehcache\ehcache_auto_created1044006757603925309diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2019-02-27 10:10:16.383  WARN 19380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-02-27 10:10:16.457  INFO 19380 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:10:16.634  WARN 19380 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:10:17.313  INFO 19380 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:10:17.330  INFO 19380 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:10:17.366  INFO 19380 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:10:17.569 ERROR 19380 --- [restartedMain] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8181]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.jmonitor.JmonitorApplication.main(JmonitorApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1067)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1149)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:561)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:998)
+	... 19 common frames omitted
+
+2019-02-27 10:10:17.575  INFO 19380 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-27 10:10:17.585  INFO 19380 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-27 10:10:17.592 ERROR 19380 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8181 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8181, or configure this application to listen on another port.
+
+2019-02-27 10:10:17.596  INFO 19380 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:10:17.615  INFO 19380 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-02-27 10:11:08.745  INFO 4204 --- [http-nio-8181-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:11:08.747  INFO 4204 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:11:08.755  INFO 4204 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-02-27 10:11:08.896  INFO 4204 --- [http-nio-8181-exec-2] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:10:08.362710564Z, 4.464285714285714]]]], error=null]], error=null]
+2019-02-27 10:11:57.602  INFO 4204 --- [Thread-69] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:11:57.619  INFO 4204 --- [Thread-69] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closed
+2019-02-27 10:11:58.116  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 4204 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:11:58.116  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:11:58.628  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:11:58.641  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e42ec77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:11:58.646  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:11:58.646  INFO 4204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:11:58.741  INFO 4204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:11:58.743  INFO 4204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:11:58.743  INFO 4204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:11:58.765  INFO 4204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:11:58.765  INFO 4204 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 644 ms
+2019-02-27 10:11:58.819  INFO 4204 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:11:59.862  INFO 4204 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} inited
+2019-02-27 10:11:59.894  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:11:59.962  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:12:00.001  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:12:00.059  WARN 4204 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:12:00.330  INFO 4204 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:12:00.371  WARN 4204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-02-27 10:12:00.393  INFO 4204 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:12:00.459  WARN 4204 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:12:00.998  INFO 4204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:12:00.999  INFO 4204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:12:01.006  INFO 4204 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:12:01.057  INFO 4204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:12:01.057  INFO 4204 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 2.999 seconds (JVM running for 66154.778)
+2019-02-27 10:12:01.060  INFO 4204 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:12:11.118  INFO 4204 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:12:11.120  INFO 4204 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:12:11.128  INFO 4204 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-02-27 10:12:11.170  INFO 4204 --- [http-nio-8181-exec-1] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:11:10.647218558Z, 4.89695652173913]]]], error=null]], error=null]
+2019-02-27 10:13:00.143  INFO 4204 --- [RMI TCP Connection(1080)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-27 10:13:00.143  INFO 4204 --- [RMI TCP Connection(1082)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-27 10:13:00.143  INFO 4204 --- [RMI TCP Connection(1081)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-27 10:13:00.146  INFO 4204 --- [RMI TCP Connection(1080)-127.0.0.1] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:13:00.163  INFO 4204 --- [RMI TCP Connection(1080)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closed
+2019-02-27 10:13:23.699  INFO 19048 --- [main] com.jmonitor.JmonitorApplicationTests    : Starting JmonitorApplicationTests on DESKTOP-DBO4L4B with PID 19048 (started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:13:23.701  INFO 19048 --- [main] com.jmonitor.JmonitorApplicationTests    : The following profiles are active: test
+2019-02-27 10:13:25.846  INFO 19048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:13:25.905  INFO 19048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b96815d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:13:25.980  INFO 19048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:13:25.992  INFO 19048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:13:26.459  INFO 19048 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:13:28.975  INFO 19048 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-27 10:13:29.218  WARN 19048 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:13:29.499  WARN 19048 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:13:29.608  WARN 19048 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:13:29.735  WARN 19048 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:13:31.915  INFO 19048 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:13:32.578  INFO 19048 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:13:33.511  WARN 19048 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:13:33.750  INFO 19048 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:13:33.801  INFO 19048 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:13:33.849  INFO 19048 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:13:34.163  INFO 19048 --- [main] com.jmonitor.JmonitorApplicationTests    : Started JmonitorApplicationTests in 11.304 seconds (JVM running for 12.421)
+2019-02-27 10:13:34.555  INFO 19048 --- [Thread-5] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:13:34.593  INFO 19048 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-02-27 10:23:04.980  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:23:05.020  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:23:05.061  INFO 17064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-27 10:23:05.061  INFO 17064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-27 10:23:06.316  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:23:06.362  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:23:06.395  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:23:06.402  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:23:06.756  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:23:06.778  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:23:06.778  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:23:06.788  INFO 17064 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Development\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Development\Java\jdk1.8.0_191\jre\bin;D:/Program Development/Java/jre1.8.0_191/bin/server;D:/Program Development/Java/jre1.8.0_191/bin;D:/Program Development/Java/jre1.8.0_191/lib/amd64;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Development\maven\apache-maven-3.6.0\bin;D:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\Program Development\sts\sts-4.0.2.RELEASE;;.]
+2019-02-27 10:23:06.909  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:23:06.910  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1848 ms
+2019-02-27 10:23:07.205  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:23:09.866  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-27 10:23:09.998  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:23:10.171  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:23:10.245  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:23:10.326  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:23:11.175  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:23:11.433  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:23:11.507  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:23:11.698  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:23:12.222  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:23:12.239  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:23:12.277  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:23:12.480  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:23:12.485  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 8.009 seconds (JVM running for 8.856)
+2019-02-27 10:23:14.864  INFO 17064 --- [http-nio-8181-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:23:14.865  INFO 17064 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:23:14.885  INFO 17064 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2019-02-27 10:23:15.763  INFO 17064 --- [http-nio-8181-exec-2] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:23:00Z, 5.040454545454546], [2019-02-27T02:22:00Z, 5.2073913043478255]]]], error=null]], error=null]
+2019-02-27 10:23:20.010  INFO 17064 --- [http-nio-8181-exec-1] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:23:00Z, 5.040454545454546], [2019-02-27T02:22:00Z, 5.2073913043478255]]]], error=null]], error=null]
+2019-02-27 10:23:46.713  INFO 17064 --- [http-nio-8181-exec-3] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:23:00Z, 5.040454545454546], [2019-02-27T02:22:00Z, 5.2073913043478255]]]], error=null]], error=null]
+2019-02-27 10:24:43.927  INFO 17064 --- [http-nio-8181-exec-3] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:24:00Z, 5.237727272727273], [2019-02-27T02:23:00Z, 5.040454545454545]]]], error=null]], error=null]
+2019-02-27 10:24:44.524  INFO 17064 --- [Thread-7] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:24:44.554  INFO 17064 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-02-27 10:24:46.711  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:24:46.712  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:24:47.332  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:24:47.346  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:24:47.353  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:24:47.354  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:24:47.447  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:24:47.448  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:24:47.448  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:24:47.470  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:24:47.470  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 752 ms
+2019-02-27 10:24:47.565  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:24:48.998  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2019-02-27 10:24:49.050  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:24:49.190  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:24:49.254  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:24:49.334  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:24:49.691  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:24:49.753  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:24:49.791  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:24:49.878  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:24:50.363  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:24:50.365  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:24:50.375  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:24:50.423  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:24:50.424  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.779 seconds (JVM running for 106.795)
+2019-02-27 10:24:50.428  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:29:13.342  INFO 17064 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:29:13.344  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:29:13.368  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2019-02-27 10:29:13.891  INFO 17064 --- [http-nio-8181-exec-1] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:29:00Z, 4.232272727272727], [2019-02-27T02:28:00Z, 4.3940909090909095]]]], error=null]], error=null]
+2019-02-27 10:33:34.837  INFO 17064 --- [Thread-12] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:33:34.856  INFO 17064 --- [Thread-12] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2019-02-27 10:33:37.281  WARN 17064 --- [http-nio-8181-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler public com.jmonitor.util.BaseResultUtil com.jmonitor.config.exception.JmonitorExceptionHandler.handleException(java.lang.Exception)
+
+java.lang.NullPointerException: null
+	at org.springframework.web.util.UrlPathHelper.removeSemicolonContentInternal(UrlPathHelper.java:506)
+	at org.springframework.web.util.UrlPathHelper.removeSemicolonContent(UrlPathHelper.java:502)
+	at org.springframework.web.util.UrlPathHelper.decodeAndCleanUriString(UrlPathHelper.java:435)
+	at org.springframework.web.util.UrlPathHelper.getRequestUri(UrlPathHelper.java:324)
+	at org.springframework.web.util.UrlPathHelper.getPathWithinApplication(UrlPathHelper.java:240)
+	at org.springframework.web.util.UrlPathHelper.getPathWithinServletMapping(UrlPathHelper.java:192)
+	at org.springframework.web.util.UrlPathHelper.getLookupPathForRequest(UrlPathHelper.java:169)
+	at org.springframework.web.accept.PathExtensionContentNegotiationStrategy.getMediaTypeKey(PathExtensionContentNegotiationStrategy.java:94)
+	at org.springframework.web.accept.AbstractMappingContentNegotiationStrategy.resolveMediaTypes(AbstractMappingContentNegotiationStrategy.java:102)
+	at org.springframework.web.accept.ContentNegotiationManager.resolveMediaTypes(ContentNegotiationManager.java:124)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.getAcceptableMediaTypes(AbstractMessageConverterMethodProcessor.java:390)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:228)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:180)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:119)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:408)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:136)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1297)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1109)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-02-27 10:33:37.565  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:33:37.565  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:33:38.160  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:33:38.173  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:33:38.179  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:33:38.180  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:33:38.274  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:33:38.276  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:33:38.276  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:33:38.302  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:33:38.302  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 733 ms
+2019-02-27 10:33:38.397  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:33:39.394  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2019-02-27 10:33:39.441  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:33:39.614  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:33:39.659  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:33:39.708  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:33:40.022  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:33:40.083  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:33:40.110  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:33:40.181  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:33:40.635  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:33:40.637  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:33:40.645  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:33:40.684  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:33:40.685  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.191 seconds (JVM running for 637.055)
+2019-02-27 10:33:40.687  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:33:45.045  INFO 17064 --- [http-nio-8181-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:33:45.048  INFO 17064 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:33:45.060  INFO 17064 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-02-27 10:33:45.548  INFO 17064 --- [http-nio-8181-exec-2] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:33:00Z, 4.034090909090909], [2019-02-27T02:32:00Z, 4.2291304347826095]]]], error=null]], error=null]
+2019-02-27 10:39:06.936  INFO 17064 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:39:06.952  INFO 17064 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2019-02-27 10:39:14.426  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:39:14.427  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:39:14.970  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:39:14.983  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:39:14.987  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:39:14.988  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:39:15.072  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:39:15.074  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:39:15.074  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:39:15.096  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:39:15.096  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 667 ms
+2019-02-27 10:39:15.170  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:39:16.195  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+2019-02-27 10:39:16.231  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:39:16.342  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:39:16.388  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:39:16.434  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:39:16.749  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:39:16.797  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:39:16.825  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:39:16.907  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:39:17.375  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:39:17.376  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:39:17.382  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:39:17.418  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:39:17.419  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.039 seconds (JVM running for 973.79)
+2019-02-27 10:39:17.422  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:39:31.435  INFO 17064 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:39:31.437  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:39:31.453  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-02-27 10:39:31.913  INFO 17064 --- [http-nio-8181-exec-1] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:39:00Z, 4.164545454545455], [2019-02-27T02:38:00Z, 4.547272727272728]]]], error=null]], error=null]
+2019-02-27 10:39:36.332  INFO 17064 --- [http-nio-8181-exec-2] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:39:00Z, 4.164545454545455], [2019-02-27T02:38:00Z, 4.547272727272728]]]], error=null]], error=null]
+2019-02-27 10:39:50.975 ERROR 17064 --- [http-nio-8181-exec-2] o.apache.coyote.http11.Http11Processor   : Error processing request
+
+java.lang.NullPointerException: null
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-02-27 10:39:50.977  WARN 17064 --- [http-nio-8181-exec-2] o.a.catalina.connector.CoyoteAdapter     : Exception while attempting to add an entry to the access log
+
+java.lang.NullPointerException: null
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:438)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-02-27 10:39:50.977 ERROR 17064 --- [http-nio-8181-exec-2] o.apache.coyote.http11.Http11Processor   : Error finishing response
+
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11OutputBuffer.commit(Http11OutputBuffer.java:306)
+	at org.apache.coyote.http11.Http11Processor.prepareResponse(Http11Processor.java:985)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:369)
+	at org.apache.coyote.http11.Http11Processor.endRequest(Http11Processor.java:1112)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:448)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-02-27 10:39:54.716  INFO 17064 --- [http-nio-8181-exec-3] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:39:00Z, 4.164545454545455], [2019-02-27T02:38:00Z, 4.547272727272728]]]], error=null]], error=null]
+2019-02-27 10:41:17.792  INFO 17064 --- [Thread-28] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:41:17.808  INFO 17064 --- [Thread-28] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+2019-02-27 10:41:18.293  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:41:18.294  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:41:18.942  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:41:18.955  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:41:18.960  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:41:18.960  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:41:19.056  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:41:19.056  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:41:19.057  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:41:19.080  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:41:19.080  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 782 ms
+2019-02-27 10:41:19.166  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:41:20.870  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+2019-02-27 10:41:20.904  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:41:21.050  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:41:21.101  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:41:21.147  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:41:21.469  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:41:21.524  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:41:21.556  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:41:21.646  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:41:22.158  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:41:22.159  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:41:22.166  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:41:22.208  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:41:22.208  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.991 seconds (JVM running for 1098.579)
+2019-02-27 10:41:22.212  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:41:24.960  INFO 17064 --- [http-nio-8181-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:41:24.962  INFO 17064 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:41:24.972  INFO 17064 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-02-27 10:41:25.364  INFO 17064 --- [http-nio-8181-exec-2] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:41:00Z, 4.490909090909091], [2019-02-27T02:40:00Z, 4.269130434782609]]]], error=null]], error=null]
+2019-02-27 10:42:01.927  INFO 17064 --- [Thread-36] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:42:01.944  INFO 17064 --- [Thread-36] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
+2019-02-27 10:42:02.351  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:42:02.351  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:42:02.953  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:42:02.968  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:42:02.973  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:42:02.974  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:42:03.075  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:42:03.076  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:42:03.076  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:42:03.097  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:42:03.098  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 743 ms
+2019-02-27 10:42:03.182  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:42:03.930  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} inited
+2019-02-27 10:42:03.967  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:42:04.100  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:42:04.154  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:42:04.203  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:42:04.545  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:42:04.603  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:42:04.633  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:42:04.720  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:42:05.288  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:42:05.289  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:42:05.296  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:42:05.337  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:42:05.338  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.041 seconds (JVM running for 1141.709)
+2019-02-27 10:42:05.342  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:42:08.021  INFO 17064 --- [http-nio-8181-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:42:08.023  INFO 17064 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:42:08.034  INFO 17064 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-02-27 10:42:08.474  INFO 17064 --- [http-nio-8181-exec-2] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:42:00Z, 4.308260869565218], [2019-02-27T02:41:00Z, 4.490909090909091]]]], error=null]], error=null]
+2019-02-27 10:43:36.570  INFO 17064 --- [Thread-44] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:43:36.589  INFO 17064 --- [Thread-44] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
+2019-02-27 10:43:37.069  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:43:37.069  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:43:37.759  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:43:37.773  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:43:37.778  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:43:37.778  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:43:37.883  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:43:37.884  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:43:37.884  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:43:37.907  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:43:37.908  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 836 ms
+2019-02-27 10:43:37.992  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:43:38.666  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} inited
+2019-02-27 10:43:38.703  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:43:38.791  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:43:38.892  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:43:38.943  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:43:39.285  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:43:39.338  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:43:39.374  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:43:39.463  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:43:40.018  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:43:40.019  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:43:40.026  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:43:40.076  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:43:40.076  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.07 seconds (JVM running for 1236.447)
+2019-02-27 10:43:40.079  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:43:44.985  INFO 17064 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:43:44.987  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:43:45.000  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-02-27 10:43:45.395  INFO 17064 --- [http-nio-8181-exec-1] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:47.039  INFO 17064 --- [http-nio-8181-exec-3] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:48.070  INFO 17064 --- [http-nio-8181-exec-2] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:49.103  INFO 17064 --- [http-nio-8181-exec-5] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:49.952  INFO 17064 --- [http-nio-8181-exec-4] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:50.872  INFO 17064 --- [http-nio-8181-exec-7] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:51.670  INFO 17064 --- [http-nio-8181-exec-6] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:52.550  INFO 17064 --- [http-nio-8181-exec-8] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:53.360  INFO 17064 --- [http-nio-8181-exec-9] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:54.175  INFO 17064 --- [http-nio-8181-exec-12] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:55.018  INFO 17064 --- [http-nio-8181-exec-14] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:55.864  INFO 17064 --- [http-nio-8181-exec-11] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:56.677  INFO 17064 --- [http-nio-8181-exec-10] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:57.594  INFO 17064 --- [http-nio-8181-exec-13] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:58.365  INFO 17064 --- [http-nio-8181-exec-16] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:43:59.205  INFO 17064 --- [http-nio-8181-exec-15] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:44:00.009  INFO 17064 --- [http-nio-8181-exec-17] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:44:00.756  INFO 17064 --- [http-nio-8181-exec-18] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:43:00Z, 4.385909090909092], [2019-02-27T02:42:00Z, 4.308260869565217]]]], error=null]], error=null]
+2019-02-27 10:44:01.568  INFO 17064 --- [http-nio-8181-exec-20] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, null], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:02.435  INFO 17064 --- [http-nio-8181-exec-19] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, null], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:03.225  INFO 17064 --- [http-nio-8181-exec-21] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, null], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:04.150  INFO 17064 --- [http-nio-8181-exec-22] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, null], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:05.033  INFO 17064 --- [http-nio-8181-exec-23] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, null], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:05.946  INFO 17064 --- [http-nio-8181-exec-25] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, null], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:06.783  INFO 17064 --- [http-nio-8181-exec-27] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:07.752  INFO 17064 --- [http-nio-8181-exec-26] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:08.563  INFO 17064 --- [http-nio-8181-exec-24] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:09.557  INFO 17064 --- [http-nio-8181-exec-30] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:10.352  INFO 17064 --- [http-nio-8181-exec-28] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:11.212  INFO 17064 --- [http-nio-8181-exec-29] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:11.987  INFO 17064 --- [http-nio-8181-exec-1] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:12.856  INFO 17064 --- [http-nio-8181-exec-3] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:13.629  INFO 17064 --- [http-nio-8181-exec-2] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:44:36.152  INFO 17064 --- [Thread-52] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:44:36.167  INFO 17064 --- [Thread-52] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
+2019-02-27 10:44:36.595  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:44:36.595  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:44:37.264  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:44:37.277  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:44:37.282  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:44:37.283  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:44:37.382  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:44:37.383  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:44:37.383  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:44:37.405  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:44:37.405  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 807 ms
+2019-02-27 10:44:37.485  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:44:38.102  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} inited
+2019-02-27 10:44:38.150  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:44:38.234  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:44:38.317  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:44:38.363  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:44:38.710  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:44:38.767  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:44:38.798  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:44:38.889  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:44:39.443  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:44:39.444  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:44:39.452  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:44:39.493  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:44:39.494  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 2.963 seconds (JVM running for 1295.864)
+2019-02-27 10:44:39.497  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:44:42.772  INFO 17064 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:44:42.773  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:44:42.783  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-02-27 10:44:43.237  INFO 17064 --- [http-nio-8181-exec-1] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:44:00Z, 4.423636363636363], [2019-02-27T02:43:00Z, 4.385909090909092]]]], error=null]], error=null]
+2019-02-27 10:45:15.055  INFO 17064 --- [Thread-60] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:45:15.072  INFO 17064 --- [Thread-60] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closed
+2019-02-27 10:45:15.651  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:45:15.651  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:45:16.362  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:45:16.375  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:45:16.380  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:45:16.381  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:45:16.481  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:45:16.482  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:45:16.483  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:45:16.506  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:45:16.506  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 851 ms
+2019-02-27 10:45:16.601  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:45:18.414  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} inited
+2019-02-27 10:45:18.452  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:45:18.564  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:45:18.624  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:45:18.674  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:45:18.980  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:45:19.029  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:45:19.059  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:45:19.136  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:45:19.684  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:45:19.685  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:45:19.692  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:45:19.729  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:45:19.730  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 4.15 seconds (JVM running for 1336.101)
+2019-02-27 10:45:19.733  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:45:33.814  INFO 17064 --- [Thread-68] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:45:33.838  INFO 17064 --- [Thread-68] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closed
+2019-02-27 10:45:34.282  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:45:34.282  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:45:34.955  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:45:34.968  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:45:34.973  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:45:34.974  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:45:35.073  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:45:35.074  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:45:35.075  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:45:35.099  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:45:35.099  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 812 ms
+2019-02-27 10:45:35.186  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:45:35.960  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} inited
+2019-02-27 10:45:35.994  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:45:36.077  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:45:36.136  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:45:36.178  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:45:36.485  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:45:36.536  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:45:36.564  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:45:36.666  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:45:37.242  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:45:37.243  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:45:37.251  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:45:37.288  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:45:37.289  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.067 seconds (JVM running for 1353.659)
+2019-02-27 10:45:37.292  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:45:42.370  INFO 17064 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 10:45:42.372  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 10:45:42.387  INFO 17064 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-02-27 10:45:42.772  INFO 17064 --- [http-nio-8181-exec-1] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=cpuUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:45:00Z, 3.9799999999999995], [2019-02-27T02:44:00Z, 4.423636363636363]]]], error=null]], error=null]
+2019-02-27 10:45:48.362  INFO 17064 --- [http-nio-8181-exec-2] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=memoryUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:45:00Z, 34.97863636363636], [2019-02-27T02:44:00Z, 34.99318181818182]]]], error=null]], error=null]
+2019-02-27 10:45:50.644  INFO 17064 --- [http-nio-8181-exec-4] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=memoryUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:45:00Z, 34.97863636363636], [2019-02-27T02:44:00Z, 34.99318181818182]]]], error=null]], error=null]
+2019-02-27 10:45:51.876  INFO 17064 --- [http-nio-8181-exec-3] com.jmonitor.util.InfluxServiceUtil      : QueryResult [results=[Result [series=[Series [name=memoryUsedPercent, tags=null, columns=[time, mean], values=[[2019-02-27T02:45:00Z, 34.97863636363636], [2019-02-27T02:44:00Z, 34.99318181818182]]]], error=null]], error=null]
+2019-02-27 10:46:10.096  INFO 17064 --- [Thread-76] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:46:10.122  INFO 17064 --- [Thread-76] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closed
+2019-02-27 10:46:10.760  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:46:10.761  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:46:11.915  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:11.947  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:11.956  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:11.957  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:12.176  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:46:12.177  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:46:12.177  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:46:12.216  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:46:12.217  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1451 ms
+2019-02-27 10:46:12.394  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:46:12.885  INFO 2396 --- [main] com.jmonitor.JmonitorApplicationTests    : Starting JmonitorApplicationTests on DESKTOP-DBO4L4B with PID 2396 (started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:46:12.888  INFO 2396 --- [main] com.jmonitor.JmonitorApplicationTests    : The following profiles are active: test
+2019-02-27 10:46:13.259  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} inited
+2019-02-27 10:46:13.336  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:46:13.544  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:46:13.689  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:46:13.842  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:46:14.547  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:46:14.651  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:46:14.702  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:46:14.836  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:46:15.574  INFO 2396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:15.695  INFO 2396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b96815d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:15.786  INFO 2396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:15.803  INFO 2396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:15.816  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:46:15.818  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:46:15.830  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:46:15.905  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:46:15.906  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 5.229 seconds (JVM running for 1392.277)
+2019-02-27 10:46:15.911  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:46:16.352  INFO 2396 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:46:17.635  INFO 2396 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-27 10:46:17.898  WARN 2396 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:46:18.245  WARN 2396 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:46:18.424  WARN 2396 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:46:18.621  WARN 2396 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:46:21.015  INFO 2396 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:46:21.281  WARN 2396 --- [main] net.sf.ehcache.DiskStorePathManager      : diskStorePath 'C:\Users\Administrator\AppData\Local\Temp\ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to C:\Users\Administrator\AppData\Local\Temp\ehcache\ehcache_auto_created5184558640882551430diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2019-02-27 10:46:21.803  INFO 2396 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:46:22.833  WARN 2396 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:46:23.103  INFO 2396 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:46:23.146  INFO 2396 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:46:23.212  INFO 2396 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:46:23.543  INFO 2396 --- [main] com.jmonitor.JmonitorApplicationTests    : Started JmonitorApplicationTests in 11.64 seconds (JVM running for 13.147)
+2019-02-27 10:46:23.977  INFO 2396 --- [Thread-5] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:46:24.032  INFO 2396 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-02-27 10:46:33.835  INFO 17064 --- [Thread-84] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:46:33.852  INFO 17064 --- [Thread-84] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closed
+2019-02-27 10:46:34.246  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:46:34.247  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:46:34.921  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:34.937  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:34.945  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:34.945  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:46:35.049  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:46:35.050  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:46:35.050  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:46:35.071  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:46:35.072  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 822 ms
+2019-02-27 10:46:35.154  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:46:36.266  INFO 17064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} inited
+2019-02-27 10:46:36.295  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:46:36.363  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:46:36.401  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:46:36.460  WARN 17064 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:46:36.758  INFO 17064 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:46:36.803  INFO 17064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 10:46:36.828  INFO 17064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:46:36.899  WARN 17064 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:46:37.355  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:46:37.356  INFO 17064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:46:37.363  INFO 17064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:46:37.396  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 10:46:37.396  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.207 seconds (JVM running for 1413.767)
+2019-02-27 10:46:37.399  INFO 17064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 10:46:59.235  INFO 17064 --- [Thread-92] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:46:59.251  INFO 17064 --- [Thread-92] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closed
+2019-02-27 10:46:59.720  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 17064 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:46:59.720  INFO 17064 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 10:47:00.388  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:47:00.406  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c353d8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:47:00.412  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:47:00.413  INFO 17064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:47:00.534  INFO 17064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 10:47:00.536  INFO 17064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 10:47:00.536  INFO 17064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 10:47:00.563  INFO 17064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 10:47:00.563  INFO 17064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 837 ms
+2019-02-27 10:47:00.658  INFO 17064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:47:14.929  INFO 19144 --- [main] com.jmonitor.JmonitorApplicationTests    : Starting JmonitorApplicationTests on DESKTOP-DBO4L4B with PID 19144 (started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 10:47:14.932  INFO 19144 --- [main] com.jmonitor.JmonitorApplicationTests    : The following profiles are active: test
+2019-02-27 10:47:17.119  INFO 19144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:47:17.187  INFO 19144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b96815d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:47:17.261  INFO 19144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:47:17.279  INFO 19144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 10:47:17.793  INFO 19144 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 10:47:18.827  INFO 19144 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-27 10:47:19.082  WARN 19144 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 10:47:19.396  WARN 19144 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 10:47:19.548  WARN 19144 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 10:47:19.684  WARN 19144 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 10:47:21.822  INFO 19144 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 10:47:22.453  INFO 19144 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 10:47:23.412  WARN 19144 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 10:47:23.642  INFO 19144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 10:47:23.679  INFO 19144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 10:47:23.747  INFO 19144 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 10:47:24.078  INFO 19144 --- [main] com.jmonitor.JmonitorApplicationTests    : Started JmonitorApplicationTests in 9.974 seconds (JVM running for 11.08)
+2019-02-27 10:47:24.491  INFO 19144 --- [Thread-5] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 10:47:24.529  INFO 19144 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-02-27 18:00:17.259  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 14492 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 18:00:17.262  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 18:00:17.333  INFO 14492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-27 18:00:17.333  INFO 14492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-27 18:00:18.357  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:00:18.391  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea3a8896] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:00:18.421  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:00:18.429  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:00:18.787  INFO 14492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 18:00:18.807  INFO 14492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 18:00:18.808  INFO 14492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 18:00:18.815  INFO 14492 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Development\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/Program Development/Java/jre1.8.0_191/bin/server;D:/Program Development/Java/jre1.8.0_191/bin;D:/Program Development/Java/jre1.8.0_191/lib/amd64;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Development\maven\apache-maven-3.6.0\bin;D:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\Program Development\sts\sts-4.0.2.RELEASE;;.]
+2019-02-27 18:00:18.926  INFO 14492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 18:00:18.926  INFO 14492 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1592 ms
+2019-02-27 18:00:19.084  INFO 14492 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 18:00:21.518  INFO 14492 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-27 18:00:21.669  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 18:00:21.789  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 18:00:21.851  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 18:00:21.914  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 18:00:22.672  INFO 14492 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 18:00:22.899  INFO 14492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 18:00:22.947  INFO 14492 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 18:00:23.068  WARN 14492 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 18:00:23.570  INFO 14492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 18:00:23.586  INFO 14492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 18:00:23.619  INFO 14492 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 18:00:23.801  INFO 14492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 18:00:23.803  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 6.917 seconds (JVM running for 7.593)
+2019-02-27 18:00:34.113  INFO 14492 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 18:00:34.114  INFO 14492 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 18:00:34.122  INFO 14492 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-02-27 18:00:34.657  WARN 14492 --- [http-nio-8181-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /csrf
+2019-02-27 18:04:24.574  INFO 14492 --- [Thread-7] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 18:04:24.589  INFO 14492 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-02-27 18:04:24.910  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 14492 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 18:04:24.910  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 18:04:25.302  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:04:25.312  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea3a8896] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:04:25.318  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:04:25.319  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:04:25.406  INFO 14492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 18:04:25.407  INFO 14492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 18:04:25.407  INFO 14492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 18:04:25.428  INFO 14492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 18:04:25.428  INFO 14492 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 516 ms
+2019-02-27 18:04:25.476  INFO 14492 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 18:04:27.455  INFO 14492 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2019-02-27 18:04:27.485  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 18:04:27.551  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 18:04:27.598  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 18:04:27.648  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 18:04:27.894  INFO 14492 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 18:04:27.930  INFO 14492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 18:04:27.949  INFO 14492 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 18:04:28.008  WARN 14492 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 18:04:28.461  INFO 14492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 18:04:28.462  INFO 14492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 18:04:28.467  INFO 14492 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 18:04:28.504  INFO 14492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 18:04:28.505  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.632 seconds (JVM running for 252.294)
+2019-02-27 18:04:28.508  INFO 14492 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 18:04:33.484  INFO 14492 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 18:04:33.485  INFO 14492 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 18:04:33.495  INFO 14492 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-02-27 18:07:19.454  INFO 14492 --- [Thread-12] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 18:07:19.470  INFO 14492 --- [Thread-12] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2019-02-27 18:07:19.790  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 14492 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 18:07:19.791  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 18:07:20.218  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:07:20.231  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea3a8896] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:07:20.236  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:07:20.237  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:07:20.352  INFO 14492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 18:07:20.353  INFO 14492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 18:07:20.353  INFO 14492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 18:07:20.376  INFO 14492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 18:07:20.376  INFO 14492 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 583 ms
+2019-02-27 18:07:20.433  INFO 14492 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 18:07:21.741  INFO 14492 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2019-02-27 18:07:21.771  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 18:07:21.834  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 18:07:21.875  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 18:07:21.916  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 18:07:22.175  INFO 14492 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 18:07:22.211  INFO 14492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 18:07:22.231  INFO 14492 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 18:07:22.304  WARN 14492 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 18:07:22.784  INFO 14492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 18:07:22.785  INFO 14492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 18:07:22.790  INFO 14492 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 18:07:22.822  INFO 14492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 18:07:22.822  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 3.072 seconds (JVM running for 426.612)
+2019-02-27 18:07:22.825  INFO 14492 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 18:07:30.408  INFO 14492 --- [http-nio-8181-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 18:07:30.410  INFO 14492 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 18:07:30.415  INFO 14492 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-02-27 18:08:04.569  INFO 14492 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2019-02-27 18:08:04.581  INFO 14492 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2019-02-27 18:08:04.906  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : Starting JmonitorApplication on DESKTOP-DBO4L4B with PID 14492 (F:\java\sts_workspace\Jmonitor\target\classes started by Administrator in F:\java\sts_workspace\Jmonitor)
+2019-02-27 18:08:04.906  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : The following profiles are active: test
+2019-02-27 18:08:05.280  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:08:05.289  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea3a8896] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:08:05.293  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:08:05.294  INFO 14492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:08:05.372  INFO 14492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-02-27 18:08:05.373  INFO 14492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-27 18:08:05.373  INFO 14492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-27 18:08:05.391  INFO 14492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-27 18:08:05.391  INFO 14492 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 483 ms
+2019-02-27 18:08:05.437  INFO 14492 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-02-27 18:08:06.646  INFO 14492 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+2019-02-27 18:08:06.676  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Dbs.
+2019-02-27 18:08:06.735  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Loadbalancers.
+2019-02-27 18:08:06.774  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Pods.
+2019-02-27 18:08:06.815  WARN 14492 --- [restartedMain] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.jmonitor.modules.sys.entity.Servers.
+2019-02-27 18:08:07.046  INFO 14492 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2019-02-27 18:08:07.081  INFO 14492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-27 18:08:07.099  INFO 14492 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-27 18:08:07.158  WARN 14492 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-27 18:08:07.612  INFO 14492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-27 18:08:07.613  INFO 14492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-27 18:08:07.617  INFO 14492 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-27 18:08:07.650  INFO 14492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-02-27 18:08:07.650  INFO 14492 --- [restartedMain] com.jmonitor.JmonitorApplication         : Started JmonitorApplication in 2.778 seconds (JVM running for 471.44)
+2019-02-27 18:08:07.653  INFO 14492 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-02-27 18:08:10.709  INFO 14492 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-27 18:08:10.711  INFO 14492 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-27 18:08:10.720  INFO 14492 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms

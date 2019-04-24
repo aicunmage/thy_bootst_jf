@@ -1,0 +1,119 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 3000
+    min-spare-threads: 30
+  
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initial-size: 10
+      min-idle: 10
+      max-active: 500
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      pool-prepared-statements: false
+      max-pool-prepared-statement-per-connection-size: 20
+      filters: stat
+      aop-patterns: com.jmonitor.modules.*.controller
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8 
+  profiles:
+    active: dev 
+  mvc:
+    static-path-pattern: /jmonitor/static/**
+  resources:
+    static-locations: classpath:/static/
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+  
+    
+#mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: com.jmonitor.modules.*.entity
+  global-config:
+    # 数据库相关配置
+    db-config:
+      #主键类型  AUTO:"数据库ID自增", INPUT:"用户输入ID",ID_WORKER:"全局唯一ID (数字类型唯一ID)", UUID:"全局唯一ID UUID";
+      id-type: ID_WORKER
+      #字段策略 IGNORED:"忽略判断",NOT_NULL:"非 NULL 判断"),NOT_EMPTY:"非空判断"
+      field-strategy: NOT_EMPTY
+      #数据库大写下划线转换
+      #capital-mode: true
+      #逻辑删除配置
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+      db-type: mysql
+#    #刷新mapper 调试神器
+#    refresh: true
+  # 原生配置
+  configuration:
+  #驼峰下划线转换
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+
+       
+---
+server:
+  port: 8181
+
+spring:
+  profiles: dev
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/guest?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+      username: root
+      password: root
+      filters: wall,mergeStat
+  # spring 自动配置influxdb
+  influx:
+    url: http://192.168.10.98:8086/
+    user: usermetric
+    password: upassword
+    database: metric
+---
+server:
+  port: 8181
+
+spring:
+  profiles: test
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.10.98:4406/guest?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+      username: root
+      password: my-secret-pw
+      filters: wall,mergeStat
+  # spring 自动配置influxdb
+  influx:
+    url: http://192.168.10.98:8086/
+    user: usermetric
+    password: upassword
+    database: metric
+---
+server:
+  port: 8181
+
+spring:
+  profiles: pro
+  datasource:
+    druid:
+      url: jdbc:mysql://rm-uf629uq3w78tbz72v.mysql.rds.aliyuncs.com/visualops?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+      username: visualops
+      password: vo*12345
+    filters: wall,mergeStat
+  # spring 自动配置influxdb
+  influx:
+    url: http://metric-influxdb-svc:8086/
+    user: usermetric
+    password: upassword
+    database: metric

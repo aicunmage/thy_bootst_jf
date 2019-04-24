@@ -1,0 +1,2 @@
+2019-03-12 17:41:25.243  WARN 16048 --- [http-nio-8181-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2019-03-12 20:23:19.206  WARN 16048 --- [http-nio-8181-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico

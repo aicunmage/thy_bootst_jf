@@ -1,0 +1,61 @@
+2019-02-14 11:15:17.250 ERROR 10792 --- [http-nio-8080-exec-30] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-14 11:19:30.493 ERROR 10792 --- [http-nio-8080-exec-2] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-14 11:22:16.564 ERROR 10792 --- [http-nio-8080-exec-10] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-14 11:35:52.818 ERROR 10792 --- [http-nio-8080-exec-6] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-14 13:56:41.661 ERROR 10792 --- [http-nio-8080-exec-1] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-14 13:59:16.428 ERROR 10792 --- [http-nio-8080-exec-6] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-14 14:01:26.020 ERROR 10792 --- [http-nio-8080-exec-9] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-14 14:18:21.187 ERROR 10792 --- [http-nio-8080-exec-4] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-14 16:06:48.923 ERROR 10792 --- [http-nio-8080-exec-17] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-14 16:07:19.727 ERROR 10792 --- [http-nio-8080-exec-20] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-02-18 10:11:02.469 ERROR 1992 --- [restartedMain] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.jmonitor.JmonitorApplication.main(JmonitorApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1067)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1149)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:561)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:998)
+	... 19 common frames omitted
+
+2019-02-18 10:11:02.502 ERROR 1992 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+

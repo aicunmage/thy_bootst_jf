@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Custom styles for this template-->
+<link th:href="@{/jmonitor/static/css/sb-admin-2.min.css}" rel="stylesheet">
+
+<!-- Custom fonts for this template-->
+<link th:href="@{/jmonitor/static/vendor/fontawesome-free/css/all.min.css}"
+	rel="stylesheet" type="text/css">
+<link
+	th:href="@{https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i}"
+	rel="stylesheet">
+
+<!-- Custom styles for this page -->
+<link th:href="@{/jmonitor/static/vendor/bootstarp-table/bootstrap-table.scss}"
+	rel="stylesheet">
+<!-- Bootstarp -->
+<link th:href="@{/jmonitor/static/vendor/bootstrap/scss/bootstrap.scss}"
+	rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- Content Wrapper -->
+	<div class="container-fluid">
+		<h1 class="h5 mb-4 text-gray-800">层级维护</h1>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="card position-relative">
+					<div class="card-header py-3">
+						<h6 class="m-0 font-weight-bold text-primary">层级列表</h6>
+					</div>
+					<div class="card-body">
+						<div class="btn-group fa-pull-left mb-sm-1 my-sm-1">
+							<div class="pl-md-0 px-md-0">
+								<a id="addLayer" href="#" class="btn btn-primary btn-icon-split"
+									onclick="$.add('/jmonitor/layer/toLayer')"> <span
+									class="icon text-white-50"> <i class="fas fa-plus"></i>
+								</span> <span class="text">新增</span>
+								</a>
+							</div>
+							<div class="pl-md-1 px-md-1">
+								<a id="editLayer" href="#"
+									class="btn btn-warning btn-icon-split"
+									onclick="$.edit('/jmonitor/layer/toLayer')"> <span
+									class="icon text-white-50"> <i class="fas fa-edit"></i>
+								</span> <span class="text">修改</span>
+								</a>
+							</div>
+							<div class="pl-md-1 px-md-1">
+								<a href="#" class="btn btn-danger btn-icon-split"
+									onclick="$.del('/jmonitor/layer/')"> <span
+									class="icon text-white-50"> <i class="fas fa-trash"></i>
+								</span> <span class="text">删除</span>
+								</a>
+							</div>
+						</div>
+						<table id="layer_table" data-url="/jmonitor/layer/list"
+							data-id-field="id" data-pagination="true"
+							data-click-to-select="true" data-single-select="true">
+							<thead>
+								<tr>
+									<th data-radio="true"></th>
+									<th data-field="id">id</th>
+									<th data-field="name">层级名</th>
+									<th data-field="sort">排序</th>
+<!-- 									<th data-field="isdelete" data-align="center" -->
+<!-- 										data-formatter="isdeleteFormatter">是否废弃</th> -->
+								</tr>
+							</thead>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Main Content -->
+
+	<!-- Bootstrap core JavaScript-->
+
+	<script th:src="@{/jmonitor/static/vendor/jquery/jquery.min.js}"></script>
+	<script
+		th:src="@{https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js}"></script>
+	<script th:src="@{/jmonitor/static/vendor/bootstrap/js/bootstrap.min.js}"></script>
+	<script th:src="@{/jmonitor/static/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+
+	<!-- Core plugin JavaScript-->
+	<script th:src="@{/jmonitor/static/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script th:src="@{/jmonitor/static/js/sb-admin-2.min.js}"></script>
+
+
+	<!-- Page level plugins -->
+	<script th:src="@{/jmonitor/static/vendor/bootstarp-table/bootstrap-table.js}"></script>
+	<script
+		th:src="@{/jmonitor/static/vendor/bootstarp-table/bootstrap-table-zh-CN.js}"></script>
+
+	<!-- bootbox -->
+	<script th:src="@{/jmonitor/static/vendor/bootbox/bootbox.all.min.js}"></script>
+</body>
+<script type="text/javascript">
+	var $table = $("#layer_table").bootstrapTable();
+
+	// bootbox
+	var locale = {
+		OK : '确定',
+		CONFIRM : '取消',
+		CANCEL : '确认'
+	};
+	bootbox.addLocale('bootbox', locale);
+	var buttons = {
+		cancel : {
+			id : 'btn-ok',
+			label : "关闭",
+			className : 'btn-default',
+			callback : function() {
+			}
+		},
+		noclose : {
+			label : "重置",
+			className : 'btn-info',
+			callback : function() {
+				$("#editLayerFrom")[0].reset();
+				return false;
+			}
+		},
+		ok : {
+			label : "确认",
+			className : 'btn-primary',
+			callback : function() {
+				console.log("..确认打印..");
+				$("#editLayerFrom").ajaxSubmit({
+					success : function(data, status, $form) {
+						if (data.status == 200) {
+							$("#layer_table").bootstrapTable('refresh');
+						} else {
+							bootbox.alert("提交失败");
+						}
+
+					},
+					complete : function() {
+
+					}
+				});
+			}
+		}
+	};
+
+	$(function($) {
+		$.add = function(href, callback) {
+			var dialog = bootbox.dialog({
+				title : '新增',
+				message : $('<div></div>').load(href),
+				size : 'large',
+				buttons : buttons
+			});
+			if ((typeof callback == 'function')
+					&& callback.constructor == Function) {
+				callback(dialog);
+			}
+		};
+
+		$.edit = function(href, callback) {
+			var records = $("#layer_table").bootstrapTable('getSelections');
+			if (records.length == 0) {
+				bootbox.alert({
+					title : '提示',
+					message : '请选择要修改的行'
+				});
+				return;
+			}
+			var dialog = bootbox.dialog({
+				title : '编辑',
+				message : $('<div></div>').load(href + "?id=" + records[0].id),
+				size : 'large',
+				buttons : buttons
+			});
+
+			if ((typeof callback == 'function')
+					&& callback.constructor == Function) {
+				callback(dialog);
+			}
+		};
+
+		$.del = function(href) {
+			var records = $("#layer_table").bootstrapTable('getSelections');
+			if (records.length == 0) {
+				bootbox.alert({
+					title : '提示',
+					message : '请选择要删除的行'
+				});
+				return;
+			}
+			bootbox.confirm({
+				title : "删除",
+				message : "确定要删除该行数据?",
+				callback : function(result) {
+					if (result) {
+						$.ajax({
+							url : href + records[0].id,
+							type : 'delete',
+							dataType : 'json',
+							success : function(msg) {
+								$("#layer_table").bootstrapTable('refresh');
+								console.log(msg);
+							},
+							error : function() {
+								alert('删除失败');
+							}
+						});
+					}
+				}
+			});
+		};
+	});
+
+// 	function isdeleteFormatter(value) {
+// 		return value == "0" ? "否" : "是";
+// 	}
+</script>
+</html>

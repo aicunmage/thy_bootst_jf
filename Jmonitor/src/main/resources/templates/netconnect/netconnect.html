@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Custom fonts for this template-->
+<link th:href="@{/jmonitor/static/vendor/fontawesome-free/css/all.min.css}"
+	rel="stylesheet" type="text/css">
+<link
+	th:href="@{https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i}"
+	rel="stylesheet">
+
+<!-- Custom styles for this template-->
+<link th:href="@{/jmonitor/static/css/sb-admin-2.min.css}" rel="stylesheet">
+
+<!-- bootstarp-table -->
+<link th:href="@{/jmonitor/static/vendor/bootstarp-table/bootstrap-table.scss}"
+	rel="stylesheet">
+<!-- 	bootstrap-select -->
+<link
+	th:href="@{/jmonitor/static/vendor/bootstrap-select/css/bootstrap-select.min.css}"
+	rel="stylesheet">
+
+<!-- Bootstarp -->
+<link th:href="@{/jmonitor/static/vendor/bootstrap/scss/bootstrap.scss}"
+	rel="stylesheet">
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<h1 class="h5 mb-4 text-gray-800">服务并发控制</h1>
+		<div class="row">
+			<!-- Fade In Utility -->
+
+			<div class="col-xl-6 col-lg-7">
+				<div class="card position-relative">
+					<div class="card-header py-3">
+						<h6 class="m-0 font-weight-bold text-primary">待选服务器</h6>
+					</div>
+					<div class="card-body">
+						<div class="btn-group fa-pull-left mb-sm-1 my-sm-1">
+							<div class="pl-md-0 px-md-0">
+								<a id="addRule" href="#" class="btn btn-primary btn-icon-split"
+									onclick="$.addNet()"> <span class="icon text-white-50">
+										<i class="fas fa-plus"></i>
+								</span> <span class="text">添加</span>
+								</a>
+							</div>
+						</div>
+						<div class="table-responsive">
+							<table id="netconnect_wait_table" data-id-field="keyId"
+								data-click-to-select="true" data-url="/jmonitor/netconnect/list/wait">
+								<thead>
+									<tr>
+										<th data-field="state" data-checkbox="true"></th>
+										<th data-field="type">类型</th>
+										<th data-field="name">实例名</th>
+										<th data-field="keyId">KEYId</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Fade In Utility -->
+			<div class="col-xl-6 col-lg-5">
+				<div class="card position-relative">
+					<div class="card-header py-3">
+						<h6 class="m-0 font-weight-bold text-primary">已选服务器</h6>
+					</div>
+					<div class="card-body">
+						<div class="btn-group fa-pull-left mb-sm-1 my-sm-1">
+							<div class="pl-md-1 px-md-1">
+								<a id="delRule" href="#" class="btn btn-danger btn-icon-split"
+									onclick="$.delNet()"> <span class="icon text-white-50">
+										<i class="fas fa-trash"></i>
+								</span> <span class="text">移除</span>
+								</a>
+							</div>
+						</div>
+						<div class="table-responsive">
+							<table id="netconnect_ok_table" data-id-field="keyId"
+								data-click-to-select="true" data-url="/jmonitor/netconnect/list/ok">
+								<thead>
+									<tr>
+										<th data-field="state" data-checkbox="true"></th>
+										<th data-field="type">类型</th>
+										<th data-field="name">实例名</th>
+										<th data-field="keyId">KEYId</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+	<!-- /.container-fluid -->
+
+
+
+
+	<!-- Bootstrap core JavaScript-->
+
+	<script th:src="@{/jmonitor/static/vendor/jquery/jquery.min.js}"></script>
+
+	<script
+		th:src="@{https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js}"></script>
+	<script th:src="@{/jmonitor/static/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+
+	<!-- Core plugin JavaScript-->
+	<script th:src="@{/jmonitor/static/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script th:src="@{/jmonitor/static/js/sb-admin-2.min.js}"></script>
+
+	<!-- 	bootstarp-table -->
+	<script th:src="@{/jmonitor/static/vendor/bootstarp-table/bootstrap-table.js}"></script>
+	<script
+		th:src="@{/jmonitor/static/vendor/bootstarp-table/bootstrap-table-zh-CN.js}"></script>
+
+	<!-- bootstarp-select -->
+	<script
+		th:src="@{/jmonitor/static/vendor/bootstrap-select/js/bootstrap-select.js}"></script>
+	<script
+		th:src="@{/jmonitor/static/vendor/bootstrap-select/js/i18n/defaults-zh_CN.min.js}"></script>
+	<!-- bootbox -->
+	<script th:src="@{/jmonitor/static/vendor/bootbox/bootbox.all.min.js}"></script>
+
+</body>
+<script type="text/javascript">
+	$.fn.selectpicker.Constructor.BootstrapVersion = '4';
+
+	$(function($) {
+		$("#netconnect_wait_table").bootstrapTable();
+		$("#netconnect_ok_table").bootstrapTable();
+		
+		$.addNet = function() {
+			var records=$("#netconnect_wait_table").bootstrapTable('getSelections');
+			if (records.length == 0) {
+				bootbox.alert({
+					title : "提示",
+					message : '请选择要添加的行'
+				});
+				return;
+			}
+			
+			bootbox.confirm({
+			    message: "确定添加吗？",
+			    buttons: {
+			        confirm: {
+			            label: '是',
+			            className: 'btn-success'
+			        },
+			        cancel: {
+			            label: '否',
+			            className: 'btn-danger'
+			        }
+			    },
+			    callback: function (result) {
+			    	if(result){
+			    		var keyIds = new Array();
+						for(var i in records){
+							keyIds.push(records[i].keyId);
+						}
+						
+						$.ajax({
+					        type: "POST",
+					        url: '/jmonitor/netconnect/add',
+					        data: JSON.stringify(keyIds),
+					        dataType: 'json',
+					        contentType:"application/json;charset=utf-8", 
+					        success: function(){
+					        	console.log("成功");
+					        	$("#netconnect_wait_table").bootstrapTable('refresh');
+					    		$("#netconnect_ok_table").bootstrapTable('refresh');
+					        }
+					    });
+			    	}
+			    }
+			});
+		};
+		
+		$.delNet = function() {
+			var records=$("#netconnect_ok_table").bootstrapTable('getSelections');
+			if (records.length == 0) {
+				bootbox.alert({
+					title : "提示",
+					message : '请选择要移除的行'
+				});
+				return;
+			}
+			
+			bootbox.confirm({
+			    message: "确定移除吗？",
+			    buttons: {
+			        confirm: {
+			            label: '是',
+			            className: 'btn-success'
+			        },
+			        cancel: {
+			            label: '否',
+			            className: 'btn-danger'
+			        }
+			    },
+			    callback: function (result) {
+			    	if(result){
+			    		var keyIds = new Array();
+						for(var i in records){
+							keyIds.push(records[i].keyId);
+						}
+						
+						$.ajax({
+					        type: "POST",
+					        url: '/jmonitor/netconnect/del',
+					        data: JSON.stringify(keyIds),
+					        dataType: 'json',
+					        contentType:"application/json;charset=utf-8", 
+					        success: function(){
+					        	$("#netconnect_wait_table").bootstrapTable('refresh');
+					    		$("#netconnect_ok_table").bootstrapTable('refresh');
+					        }
+					    });
+			    	}
+			    }
+			});
+		};
+	});
+</script>
+</html>

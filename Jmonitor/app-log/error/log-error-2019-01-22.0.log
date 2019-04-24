@@ -1,0 +1,12 @@
+2019-01-22 13:54:14.620 ERROR 14372 --- [http-nio-8080-exec-1] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 13:54:14.633 ERROR 14372 --- [http-nio-8080-exec-1] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 13:55:20.540 ERROR 14372 --- [http-nio-8080-exec-2] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 13:55:21.331 ERROR 14372 --- [http-nio-8080-exec-2] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 13:55:55.047 ERROR 14372 --- [http-nio-8080-exec-3] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 13:55:55.736 ERROR 14372 --- [http-nio-8080-exec-3] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 13:56:57.710 ERROR 14372 --- [http-nio-8080-exec-4] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 13:56:58.399 ERROR 14372 --- [http-nio-8080-exec-4] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 13:58:44.114 ERROR 14372 --- [http-nio-8080-exec-1] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 13:59:59.611 ERROR 14372 --- [http-nio-8080-exec-1] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 14:48:58.980 ERROR 1556 --- [http-nio-8080-exec-1] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常
+2019-01-22 14:49:41.094 ERROR 1556 --- [http-nio-8080-exec-1] c.j.m.sys.service.impl.LayerServiceImpl  : 组内规则或图片查询异常

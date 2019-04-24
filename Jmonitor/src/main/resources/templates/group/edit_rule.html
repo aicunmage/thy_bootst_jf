@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<body>
+	<!-- Basic Card Example -->
+	<div class="row">
+		<div class="col-md-12">
+			<form id="editRuleFrom" th:action="@{${api}}" th:object="${ruleParm}"
+				method="post">
+				<div class="form-group">
+					<label for="examplegroupId">组Id</label>
+					<!-- 					<input type="text" th:field="*{groupId}" class="form-control" id="groupId" placeholder="layerId"> -->
+					<div class="input-group">
+						<select id="groupSelect" th:field="*{groupId}"
+							class="selectpicker" data-style="btn-primary">
+							<option th:each="group:${groups}" th:value="${group.id}"
+								th:text="${group.name}"></option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-md-9">
+						<label for="exampleInputmath">规则</label> 
+						<input type="text" th:field="*{math}" class="form-control " id="math" placeholder="math">
+					</div>
+					<div class="form-group col-md-3">
+					<label for="test">点击测试</label> 
+					    <button type="button" class="btn btn-primary form-control" id="test">规则测试</button>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputName">规则名</label> <input type="text"
+						th:field="*{name}" class="form-control" id="name"
+						placeholder="name">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputruleType">规则类型</label>
+					<div class="input-group" id="radioId">
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" name="rd" id="m1" th:field="*{ruleType}" th:value="1"
+								class="custom-control-input"> <label
+								class="custom-control-label" for="m1">server</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" name="rd" id="m2" th:field="*{ruleType}" th:value="2"
+								class="custom-control-input"> <label
+								class="custom-control-label" for="m2">pod</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" name="rd" id="m3" th:field="*{ruleType}" th:value="3"
+								class="custom-control-input"> <label
+								class="custom-control-label" for="m3">loadbalance</label>
+						</div>
+					</div>
+					<!-- 					<input type="text" -->
+					<!-- 						th:field="*{ruleType}" class="form-control" id="ruleType" -->
+					<!-- 						placeholder="ruleType"> -->
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function($) {
+			$('#groupSelect').selectpicker();
+			$('#test').on("click",function(){
+				var mathVal=$('#math').val();
+				var radioVal = $('#radioId input:radio:checked').val();
+				if(!mathVal){
+					bootbox.alert("规则不能为空！");
+				}else{
+					$.ajax({
+						   type: "GET",
+						   url: "/jmonitor/rule/math",
+						   data: "math="+encodeURIComponent(mathVal)+"&ruleType="+radioVal,
+						   success: function(data){
+							   console.log(data[0]);
+							   if(!data[1]){
+								   bootbox.alert("该规则未匹配到合适实例！"); 
+							   }else{
+								   bootbox.alert("匹配数："+data[1]+",实例名为："+data[0]); 
+							   }
+						   }
+						});
+				}
+				
+			});
+			
+		});
+	</script>
+</body>
+</html>

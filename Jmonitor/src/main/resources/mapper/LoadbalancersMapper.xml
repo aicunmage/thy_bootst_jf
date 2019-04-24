@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmonitor.modules.sys.mapper.LoadbalancersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jmonitor.modules.sys.entity.Loadbalancers">
+        <id column="guid" property="guid" />
+        <result column="loadbalancerid" property="loadbalancerid" />
+        <result column="loadbalancername" property="loadbalancername" />
+        <result column="privateip" property="privateip" />
+        <result column="publicip" property="publicip" />
+        <result column="regionid" property="regionid" />
+        <result column="masterzoneid" property="masterzoneid" />
+        <result column="slavezoneid" property="slavezoneid" />
+        <result column="status" property="status" />
+        <result column="createtime" property="createtime" />
+        <result column="md5" property="md5" />
+    </resultMap>
+
+</mapper>

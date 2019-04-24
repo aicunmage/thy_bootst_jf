@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Custom fonts for this template-->
+<link
+	th:href="@{/jmonitor/static/vendor/fontawesome-free/css/all.min.css}"
+	rel="stylesheet" type="text/css">
+<link
+	th:href="@{https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i}"
+	rel="stylesheet">
+
+<!-- Custom styles for this template-->
+<link th:href="@{/jmonitor/static/css/sb-admin-2.min.css}"
+	rel="stylesheet">
+
+<!-- Bootstarp -->
+<link th:href="@{/jmonitor/static/vendor/bootstrap/scss/bootstrap.scss}"
+	rel="stylesheet">
+
+<!-- Bootstarp-slider -->
+<link
+	th:href="@{/jmonitor/static/vendor/bootstrap-slider/css/bootstrap-slider.min.css}"
+	rel="stylesheet">
+<style type="text/css">
+#slider12a .slider-selection {
+	background: #81bfde;
+}
+</style>
+
+</head>
+
+<body>
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<h1 class="h5 mb-4 text-gray-800">多功能控制页</h1>
+		<div class="row">
+			<!-- Fade In Utility -->
+
+			<div class="col-xl-12 col-lg-7">
+				<div class="card position-relative">
+					<div class="card-header py-3">
+						<h6 class="m-0 font-weight-bold text-primary">预警值控制</h6>
+					</div>
+					<div class="card-body border-bottom-success">
+						<div class="form-group row">
+							<label for="ex12a" class="col-sm-2 col-form-label">预警值设置：</label>
+							<div class="col-sm-4">
+								<input id="ex12a" type="text" /> 
+								<span>当前值: <span id="ex6SliderVal">0</span>% </span>
+							</div>
+							<div class="col-sm-6">
+								<div class="btn-group fa-pull-left mb-sm-1 my-sm-1">
+									<div class="pl-md-0 px-md-0">
+										<a id="addDangerCpu" href="#" class="btn btn-primary btn-icon-split" onclick="$.addDangerCpu()">
+											<span class="icon text-white-50"> 
+											  <i class="fas fa-plus"></i>
+											</span> 
+											<span class="text">提交</span>
+										</a>
+									</div>
+								</div>
+								
+								<div class="btn-group fa-pull-left mb-sm-1 my-sm-1">
+									<div class="pl-md-1 px-md-1">
+										<a id="refresh" href="#" class="btn btn-warning btn-icon-split" onclick="$.refresh()">
+											<span class="icon text-white-50"> 
+											  <i class="fas fa-sync-alt"></i>
+											</span> 
+											<span class="text">刷新</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+	<!-- /.container-fluid -->
+
+
+
+
+	<!-- Bootstrap core JavaScript-->
+
+	<script th:src="@{/jmonitor/static/vendor/jquery/jquery.min.js}"></script>
+
+	<script
+		th:src="@{https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js}"></script>
+	<script
+		th:src="@{/jmonitor/static/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+
+	<!-- Core plugin JavaScript-->
+	<script
+		th:src="@{/jmonitor/static/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script th:src="@{/jmonitor/static/js/sb-admin-2.min.js}"></script>
+
+	<!-- bootbox -->
+	<script th:src="@{/jmonitor/static/vendor/bootbox/bootbox.all.min.js}"></script>
+
+	<!-- bootstarp-slider -->
+	<script
+		th:src="@{/jmonitor/static/vendor/bootstrap-slider/js/bootstrap-slider.min.js}"></script>
+
+</body>
+<script type="text/javascript">
+     var dangerval =90;
+     function getDangerVal(){
+    	 $.ajax({
+			   type: "GET",
+			   async: false,
+			   url: "/jmonitor/mulitfun/dangerval",
+			   success: function(data){
+				   dangerval=data;
+			   }
+			});
+    	 return dangerval;
+     }
+
+	$(function($) {
+		var dangerval = getDangerVal();
+		$("#ex12a").slider({
+			id : "slider12a",
+			min : 0,
+			max : 100,
+			step : 1,
+			value : dangerval
+		});
+		$("#ex6SliderVal").text(dangerval);
+		$("#ex12a").on("change", function(val) {
+			$("#ex6SliderVal").text($("#ex12a").val());
+		});
+
+		$.addDangerCpu = function(){
+			dangerval=$("#ex12a").val();
+			console.log(dangerval);
+			$.ajax({
+				url : "/jmonitor/mulitfun/" + $("#ex12a").val(),
+				type : 'post',
+				dataType : 'json',
+				success : function(msg) {
+					bootbox.alert("修改成功");
+				},
+				error : function() {
+					bootbox.alert('删除失败');
+				}
+			});
+		};
+		
+		$.refresh =function(){
+			$('#ex12a').slider('setValue', dangerval);
+			$("#ex6SliderVal").text(dangerval);
+		};
+	});
+</script>
+</html>

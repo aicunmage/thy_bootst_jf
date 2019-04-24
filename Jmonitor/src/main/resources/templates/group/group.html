@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Custom fonts for this template-->
+<link th:href="@{/jmonitor/static/vendor/fontawesome-free/css/all.min.css}"
+	rel="stylesheet" type="text/css">
+<link
+	th:href="@{https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i}"
+	rel="stylesheet">
+
+<!-- Custom styles for this template-->
+<link th:href="@{/jmonitor/static/css/sb-admin-2.min.css}" rel="stylesheet">
+
+<!-- bootstarp-table -->
+<link th:href="@{/jmonitor/static/vendor/bootstarp-table/bootstrap-table.scss}"
+	rel="stylesheet">
+<!-- 	bootstrap-select -->
+<link
+	th:href="@{/jmonitor/static/vendor/bootstrap-select/css/bootstrap-select.min.css}"
+	rel="stylesheet">
+
+<!-- Bootstarp -->
+<link th:href="@{/jmonitor/static/vendor/bootstrap/scss/bootstrap.scss}" rel="stylesheet">
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<h1 class="h5 mb-4 text-gray-800">分组及规则维护</h1>
+		<!-- Content Row -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="card mb-1">
+					<div class="card-body">
+						<form class="form-inline" id="groupFromId">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="col-sm-0 control-label" for="layerSelect">选择层级</label>
+									<div class="col-sm-2">
+										<select id="layerSelect" name="layerId" class="selectpicker"
+											data-style="btn-primary">
+											<option th:each="layer:${layers}" th:value="${layer.id}"
+												th:text="${layer.name}"></option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-sm-2 my-sm-2">
+			<!-- Fade In Utility -->
+			<div class="col-lg-12">
+				<div class="card position-relative">
+					<div class="card-header py-3">
+						<h6 class="m-0 font-weight-bold text-primary">层级对应组</h6>
+					</div>
+					<div class="card-body">
+						<div class="btn-group fa-pull-left mb-sm-1 my-sm-1">
+							<div class="pl-md-0 px-md-0">
+								<a id="addGroup" href="#" class="btn btn-primary btn-icon-split"
+									onclick="$.addgroup('/jmonitor/group/toGroup')"> <span
+									class="icon text-white-50"> <i class="fas fa-plus"></i>
+								</span> <span class="text">新增</span>
+								</a>
+							</div>
+							<div class="pl-md-1 px-md-1">
+								<a id="editGroup" href="#"
+									class="btn btn-warning btn-icon-split"
+									onclick="$.editgroup('/jmonitor/group/toGroup')"> <span
+									class="icon text-white-50"> 
+									<i class="fas fa-edit"></i>
+								</span> <span class="text">修改</span>
+								</a>
+							</div>
+							<div class="pl-md-1 px-md-1">
+								<a id="delGroup" href="#" class="btn btn-danger btn-icon-split"
+									onclick="$.delgroup('/jmonitor/group/')"> <span
+									class="icon text-white-50"> <i class="fas fa-trash"></i>
+								</span> <span class="text">删除</span>
+								</a>
+							</div>
+						</div>
+						<div class="table-responsive">
+							<table id="group_table" data-url="/jmonitor/group/list" data-id-field="id"
+								data-pagination="true" data-query-params="queryGroupParams"
+								data-click-to-select="true" data-single-select="true">
+								<thead>
+									<tr>
+										<th data-radio="true"></th>
+										<th data-field="id">id</th>
+										<th data-field="layerId" data-formatter="layerIdFormatter">层级</th>
+										<th data-field="parentId" data-formatter="parentIdFormatter">上级</th>
+										<th data-field="name">组名</th>
+										<th data-field="isMerge" data-formatter="isMergeFormatter">是否合并</th>
+										<th data-field="mgeNameType" data-formatter="mgeNameTypeFormatter">合并名类型</th>
+										<th data-field="mgeName">合并名</th>
+										<th data-field="sort">排序</th>
+										<th data-field="type">组类型</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- Fade In Utility -->
+			<div class="col-lg-12">
+				<div class="card position-relative">
+					<div class="card-header py-3">
+						<h6 class="m-0 font-weight-bold text-primary">组对应规则</h6>
+					</div>
+					<div class="card-body">
+						<div class="btn-group fa-pull-left mb-sm-1 my-sm-1">
+							<div class="pl-md-0 px-md-0">
+								<a id="addRule" href="#" class="btn btn-primary btn-icon-split"
+									onclick="$.addRule('/jmonitor/rule/toRule')"> <span
+									class="icon text-white-50"> <i class="fas fa-plus"></i>
+								</span> <span class="text">新增</span>
+								</a>
+							</div>
+							<div class="pl-md-1 px-md-1">
+								<a id="editRule" href="#" class="btn btn-warning btn-icon-split"
+									onclick="$.editRule('/jmonitor/rule/toRule')"> <span
+									class="icon text-white-50"> 
+									<i class="fas fa-edit"></i>
+								</span> <span class="text">修改</span>
+								</a>
+							</div>
+							<div class="pl-md-1 px-md-1">
+								<a id="delRule" href="#" class="btn btn-danger btn-icon-split"
+									onclick="$.delRule('/jmonitor/rule/')"> <span
+									class="icon text-white-50"> <i class="fas fa-trash"></i>
+								</span> <span class="text">删除</span>
+								</a>
+							</div>
+						</div>
+						<div class="table-responsive">
+							<table id="rule_table" data-url="/jmonitor/rule/list" data-id-field="id"
+								data-pagination="true" data-query-params="queryRuleParams"
+								data-click-to-select="true" data-single-select="true">
+								<thead>
+									<tr>
+										<th data-radio="true"></th>
+										<th data-field="id">id</th>
+										<th data-field="groupId" data-formatter="groupIdFormatter">所属组</th>
+										<th data-field="math">规则</th>
+										<th data-field="name">规则名</th>
+										<th data-field="ruleType" data-formatter="ruleTypeFormatter">规则类型</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- /.container-fluid -->
+
+
+
+
+	<!-- Bootstrap core JavaScript-->
+
+	<script th:src="@{/jmonitor/static/vendor/jquery/jquery.min.js}"></script>
+
+	<script
+		th:src="@{https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js}"></script>
+	<script th:src="@{/jmonitor/static/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+
+	<!-- Core plugin JavaScript-->
+	<script th:src="@{/jmonitor/static/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script th:src="@{/jmonitor/static/js/sb-admin-2.min.js}"></script>
+
+	<!-- 	bootstarp-table -->
+	<script th:src="@{/jmonitor/static/vendor/bootstarp-table/bootstrap-table.js}"></script>
+	<script
+		th:src="@{/jmonitor/static/vendor/bootstarp-table/bootstrap-table-zh-CN.js}"></script>
+
+	<!-- bootstarp-select -->
+	<script
+		th:src="@{/jmonitor/static/vendor/bootstrap-select/js/bootstrap-select.js}"></script>
+	<script
+		th:src="@{/jmonitor/static/vendor/bootstrap-select/js/i18n/defaults-zh_CN.min.js}"></script>
+	<!-- bootbox -->
+	<script th:src="@{/jmonitor/static/vendor/bootbox/bootbox.all.min.js}"></script>
+	<!-- 	本地js -->
+	<script th:src="@{/jmonitor/static/js/group/groupEdit.js}"></script>
+	<script th:src="@{/jmonitor/static/js/group/ruleEdit.js}"></script>
+
+</body>
+<script type="text/javascript">
+	$.fn.selectpicker.Constructor.BootstrapVersion = '4';
+	var groupMap=getGroupMap();
+	//初始化group信息
+	function getGroupMap(){
+		var m = new Map();
+		$.ajax({
+			   type: "GET",
+			   async: false,
+			   url: "/jmonitor/group/list",
+			   success: function(data){
+			     for(var i in data){
+			    	 var group=data[i];
+			    	 m.set(group.id, group.name);
+			     }
+			   }
+			});
+		m.set("0", "顶层");
+		return m;
+	}
+
+	function queryGroupParams(params) {
+		var c = $("#groupFromId").serializeArray();
+		$.each(c, function(index, data) {
+			if (data.value != "") {
+				params[data.name] = data.value;
+			}
+		});
+		return params;
+	}
+
+	var groupId;
+	function queryRuleParams(params) {
+		var c = $("#groupFromId").serializeArray();
+		$.each(c, function(index, data) {
+			if (data.value != "") {
+				params[data.name] = data.value;
+			}
+		});
+		params['groupId'] = 'undefined';
+		if (groupId) {
+			params['groupId'] = groupId;
+		}
+
+		return params;
+	}
+
+	function parentIdFormatter(value) {
+		var reVal;
+		var parents=value.split(",");
+		for(var i in parents){
+			reVal=reVal?reVal+","+groupMap.get(parents[i]):groupMap.get(parents[i]);
+		}
+		return reVal;
+	}
+	
+	function isMergeFormatter(value) {
+		return value == true ? "是" : "否";
+	}
+
+	function mgeNameTypeFormatter(value) {
+		return value == "1" ? "组名" : "合并名";
+	}
+	
+	function ruleTypeFormatter(value){
+		return value=="1"? "SERVER":(value=="2"?"POD":"LOADBALANCERS");
+	}
+	function layerIdFormatter(value){
+		return $('#layerSelect').find("option:selected").text();
+	}
+	
+	function groupIdFormatter(value) {
+		return groupMap.get(value);
+	}
+
+	$(function($) {
+		getGroupMap();
+		
+		var $grouptable = $("#group_table");
+		var $ruletable = $("#rule_table");
+
+		var curField = 0;
+		$grouptable.bootstrapTable({
+			onClickRow : function(row, $element) {
+				curField = 1;
+				groupId = row.id;
+				$ruletable.bootstrapTable('refresh');
+			},
+			onCheck : function(row, $element) {
+				if (curField === 0) {
+					groupId = row.id;
+					$ruletable.bootstrapTable('refresh');
+				} else {
+					curField = 0;
+				}
+			}
+		});
+		$ruletable.bootstrapTable();
+
+		$('#layerSelect').selectpicker();
+		$('#layerSelect').on('changed.bs.select',
+				function(e, clickedIndex, isSelected, previousValue) {
+					groupId = null;
+					$grouptable.bootstrapTable('refresh');
+					$ruletable.bootstrapTable('refresh');
+				});
+	});
+</script>
+</html>

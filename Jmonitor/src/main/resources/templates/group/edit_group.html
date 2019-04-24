@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+</head>
+<body>
+	<!-- Basic Card Example -->
+	<div class="row">
+		<div class="col-md-12">
+			<form id="editGroupFrom" th:action="@{${api}}"
+				th:object="${groupParm}" method="post">
+				<div class="form-group">
+					<label for="exampleLayerId">层级Id</label> 
+					<div class="input-group">
+						<select id="layerIdSelect" th:field="*{layerId}" class="selectpicker"  data-style="btn-primary">
+							<option th:each="layer:${layers}" th:value="${layer.id}" th:text="${layer.name}"></option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputParentId">上级Id</label>
+					<input type="text" id="parentIdInput" th:field="*{parentId}" class="form-control"  placeholder="parentId" hidden>
+					<div class="input-group">
+						<select id="parentIdSelect" class="selectpicker"  data-style="btn-primary" multiple>
+							<option th:each="group:${groups}" th:value="${group.id}" th:text="${group.name}"></option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputName">组名</label> <input type="text"
+						th:field="*{name}" class="form-control" id="exampleInputName"
+						placeholder="name">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputisMerge">是否合并</label>
+					<div class="input-group">
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="m1" th:field="*{isMerge}" th:value="1"
+								class="custom-control-input"> <label
+								class="custom-control-label" for="m1">是</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="m2" th:field="*{isMerge}" th:value="0"
+								class="custom-control-input"> <label
+								class="custom-control-label" for="m2">否</label>
+						</div>
+					</div>
+
+				</div>
+				<div class="form-group">
+					<label for="exampleInputMgeNameType">合并名类型(是合并的情况下可选择)</label>
+					<div class="input-group">
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="n1" th:field="*{mgeNameType}"
+								th:value="1" class="custom-control-input"> <label
+								class="custom-control-label" for="n1">组名</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="n2" th:field="*{mgeNameType}"
+								th:value="2" class="custom-control-input"> <label
+								class="custom-control-label" for="n2">合并名</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputmgeName">合并名</label> <input type="text"
+						th:field="*{mgeName}" class="form-control" id="mgeName"
+						placeholder="mgeName">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputsort">排序</label> <input type="number"
+						th:field="*{sort}" class="form-control" id="sort"
+						placeholder="sort">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputtype">组类型</label> <input type="text"
+						th:field="*{type}" class="form-control" id="type"
+						placeholder="type">
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Bootstrap core JavaScript-->
+
+	<script type="text/javascript">
+	 function initSelectInput($select,$input){
+		var val=$input.val();
+		var valArr=val.split(",");
+		$select.selectpicker("val",valArr);
+	}
+	 
+	 function putSelectToInput($select,$input){
+		 $('#parentIdSelect').on('changed.bs.select',function(e, clickedIndex, isSelected, previousValue) {
+			        var selectVal=$select.selectpicker("val");
+			        $input.val(selectVal.join(","));
+				}); 
+	 }
+	
+	$(function($) {
+		$('#parentIdSelect').selectpicker();
+		$('#layerIdSelect').selectpicker();
+		initSelectInput($('#parentIdSelect'),$('#parentIdInput'));//初始化多选框
+		putSelectToInput($('#parentIdSelect'),$('#parentIdInput'));//将多选框的值初始化到input中
+		
+		
+	});
+	</script>
+</body>
+</html>

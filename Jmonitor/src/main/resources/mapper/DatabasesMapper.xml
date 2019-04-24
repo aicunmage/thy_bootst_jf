@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmonitor.modules.sys.mapper.DbsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jmonitor.modules.sys.entity.Dbs">
+        <id column="guid" property="guid" />
+        <result column="databaseid" property="databaseid" />
+        <result column="status" property="status" />
+        <result column="createtime" property="createtime" />
+        <result column="regionid" property="regionid" />
+        <result column="zoneid" property="zoneid" />
+        <result column="description" property="description" />
+        <result column="networktype" property="networktype" />
+        <result column="engine" property="engine" />
+        <result column="engineVersion" property="engineVersion" />
+        <result column="expiretime" property="expiretime" />
+        <result column="dbtype" property="dbtype" />
+        <result column="dbclass" property="dbclass" />
+        <result column="lockmode" property="lockmode" />
+        <result column="lockreason" property="lockreason" />
+        <result column="masterinstanceid" property="masterinstanceid" />
+        <result column="md5" property="md5" />
+    </resultMap>
+
+</mapper>
